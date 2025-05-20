@@ -2,6 +2,9 @@ import * as AppleAuthentication from "expo-apple-authentication";
 import { Platform } from "react-native";
 import { supabase } from "../app/utils/supabase";
 
+// https://docs.expo.dev/versions/latest/sdk/apple-authentication/
+// https://supabase.com/docs/guides/auth/social-login/auth-apple?platform=react-native&utm_source=expo&utm_medium=referral&utm_term=expo-react-native
+
 export function Auth() {
   if (Platform.OS === "ios")
     return (
